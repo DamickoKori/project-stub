@@ -4,7 +4,8 @@ module.exports = {
     levels: {
         'common.blocks': {},
         'desktop.blocks': {},
-        'desktop.bundles': {}
+        'desktop.bundles': {},
+        'design/common.blocks': {}
     },
 
     modules: {
@@ -13,16 +14,27 @@ module.exports = {
                 create: {
                     templates: {
                         'bemjson.js': '.bem/templates/bemjson.js',
+                        'post.css': '.bem/templates/post.css.js',
+                        'bemhtml.js': '.bem/templates/bemhtml.js',
+                        'deps.js': '.bem/templates/deps.js'
                     },
-                    techs: ['css', 'js'],
+                    techs: [
+                        'post.css',
+                        'js',
+                        'bemhtml.js',
+                        'deps.js'
+                    ],
                     levels: {
                         'desktop.bundles': {
                             techs: [
-                                'bemjson.js',
+                                'bemjson.js'
                             ],
                         },
                         'common.blocks': {
-                            default: true
+                        techs: [
+                            'post.css',
+                            'js'
+                        ],
                         }
                     }
                 }

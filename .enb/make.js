@@ -18,7 +18,8 @@ const techs = {
             require('rebem-css'),
             require('postcss-url')({ url: 'rebase' }),
             require('autoprefixer')(),
-            require('postcss-reporter')()
+            require('postcss-reporter')(),
+            require('postcss-variables')
         ],
 
         // js
@@ -39,8 +40,10 @@ const techs = {
         { path: 'node_modules/bem-components/desktop.blocks', check: false },
         { path: 'node_modules/bem-components/design/common.blocks', check: false },
         { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
+        { path: 'node_modules/bem-font-awesome-icons', check: false },
         'common.blocks',
-        'desktop.blocks'
+        'desktop.blocks',
+        'design/common.blocks',
     ];
 
 module.exports = function(config) {

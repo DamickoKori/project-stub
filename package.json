@@ -1,6 +1,6 @@
 {
   "author": "",
-  "name": "bem-project-stub",
+  "name": "bem-ps-my-settings",
   "version": "2.0.0",
   "browserslist": [
     "ie >= 10",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/bem/project-stub.git"
+    "url": "git://github.com/DamickoKori/project-stub.git"
   },
   "engines": {
     "node": ">=8"
@@ -47,6 +47,7 @@
     "postcss-reporter": "^4.0.0",
     "postcss-simple-vars": "^4.0.0",
     "postcss-url": "^7.0.0",
+    "postcss-variables": "^1.1.1",
     "rebem-css": "^0.2.0",
     "through2-filter": "^2.0.0",
     "ym": "^0.1.2"
@@ -56,5 +57,8 @@
     "start": "enb server",
     "build": "enb make"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bem-font-awesome-icons": "^1.1.1"
+  }
 }
