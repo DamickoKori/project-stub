@@ -1,6 +1,6 @@
 module.exports = {
     block: 'page',
-    title: 'Title of the page',
+    title: 'Modeling block',
     favicon: '/favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
@@ -39,6 +39,7 @@ module.exports = {
         },
         {
             block: 'work-area',
+            mix: {block: 'geometry', mods: {position: 'flex-center'}},
             content: {}
         }
     ]
