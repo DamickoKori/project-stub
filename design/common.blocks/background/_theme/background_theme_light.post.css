@@ -1,0 +1,21 @@
+:block(background){
+    &:mod(theme light){
+        background-color: #FFFFFF;
+    }
+    &:elem(xl):mod(theme light){
+        background-color: inherit;
+        border: 1px dashed #000000;
+    }
+    &:elem(l):mod(theme light){
+        background-color: inherit;
+        border: 1px dashed #000000;
+    }
+    &:elem(m):mod(theme light){
+        background-color: inherit;
+        border: 1px dashed #000000;
+    }
+    &:elem(s):mod(theme light){
+        background-color: inherit;
+        border: 1px dashed #000000;
+    }
+}

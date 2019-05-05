@@ -43,7 +43,7 @@ const techs = {
         { path: 'node_modules/bem-font-awesome-icons', check: false },
         'common.blocks',
         'desktop.blocks',
-        'design/common.blocks',
+        'design/common.blocks'
     ];
 
 module.exports = function(config) {
