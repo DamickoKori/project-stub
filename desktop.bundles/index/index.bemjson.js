@@ -28,7 +28,7 @@ module.exports = {
                 {
                     elem: 'm',
                     elemMods: {theme: 'light'},
-                    mix: {block: 'geometry', mods: {position: 'flex-center'}}
+                    mix: {block: 'geometry', mods: {position: 'flex-center', focused: true}}
                 },
                 {
                     elem: 's',
