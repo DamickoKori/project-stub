@@ -1,7 +1,0 @@
-:block(geometry):mod(position flex-center){
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}

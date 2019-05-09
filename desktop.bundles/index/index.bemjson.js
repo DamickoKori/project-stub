@@ -11,36 +11,28 @@ module.exports = {
     mods: { theme: 'islands' },
     content: [
         {
-            block: 'background',
-            mods: {theme: 'light'},
-            mix: {block: 'geometry', mods: {position: 'flex-center'}},
+
+            block: 'geometry',
+            theme: 'light',
             content: [
-                {
-                    elem: 'xl',
-                    elemMods: {theme: 'light'},
-                    mix: {block: 'geometry', mods: {position: 'flex-center'}}
-                },
-                {
-                    elem: 'l',
-                    elemMods: {theme: 'light'},
-                    mix: {block: 'geometry', mods: {position: 'flex-center'}}
-                },
-                {
-                    elem: 'm',
-                    elemMods: {theme: 'light'},
-                    mix: {block: 'geometry', mods: {position: 'flex-center', focused: true}}
-                },
-                {
-                    elem: 's',
-                    elemMods: {theme: 'light'},
-                    mix: {block: 'geometry', mods: {position: 'flex-center'}}
-                }
-            ]
+                {elem: 'frame', size: 'xl'},
+                {elem: 'frame', size: 'l'},
+                {elem: 'frame', size: 'm', focused: true},
+                {elem: 'frame', size: 's'}
+            ].map(function(frame){
+                frame.elemMods = {theme: 'light', size: frame.size, position: 'flex-center', focused: frame.focused};
+                return frame;
+            })
         },
         {
-            block: 'work-area',
-            mix: {block: 'geometry', mods: {position: 'flex-center'}},
-            content: {}
+            block: 'geometry',
+            content: {
+                elem: 'block',
+                content: []
+            }
         }
-    ]
+    ].map(function(geometry){
+        geometry.mods = {theme: geometry.theme, position: 'flex-center'}
+        return geometry;
+    })
 };
