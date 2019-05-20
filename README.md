@@ -4,7 +4,6 @@
 
 ## Изменения
 
-* Добавлен пакет [postcss-variables](https://www.npmjs.com/package/postcss-variables).
 * Подключены иконки [bem-font-awesome-icons](https://github.com/tadatuta/bem-font-awesome-icons).
 
 ## Особенности

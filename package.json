@@ -42,13 +42,11 @@
     "postcss-calc": "^6.0.0",
     "postcss-each": "^0.10.0",
     "postcss-for": "^2.1.1",
-    "postcss-hexrgba": "^1.0.1",
     "postcss-import": "^10.0.0",
     "postcss-nested": "^2.0.2",
     "postcss-reporter": "^4.0.0",
     "postcss-simple-vars": "^4.0.0",
     "postcss-url": "^7.0.0",
-    "postcss-variables": "^1.1.1",
     "rebem-css": "^0.2.0",
     "through2-filter": "^2.0.0",
     "ym": "^0.1.2"
