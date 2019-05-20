@@ -36,7 +36,8 @@ module.exports = {
                             size: 'm',
                             type: 'link',
                             width: 'available'
-                        }
+                        },
+                        text: 'Я существую'
                     }
                 ]
             }

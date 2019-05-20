@@ -41,7 +41,7 @@ const techs = {
         { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
         { path: 'node_modules/bem-font-awesome-icons', check: false },
         'bem-dk-components/common.blocks',
-        'bem-dk-components/design/common.blocks'
+        'bem-dk-components/design/common.blocks',
         'common.blocks',
         'desktop.blocks',
         'design/common.blocks',
