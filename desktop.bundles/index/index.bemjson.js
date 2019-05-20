@@ -28,7 +28,17 @@ module.exports = {
             block: 'geometry',
             content: {
                 elem: 'block',
-                content: []
+                content: [
+                    {
+                        block: 'button',
+                        mods: {
+                            theme: 'islands',
+                            size: 'm',
+                            type: 'link',
+                            width: 'available'
+                        }
+                    }
+                ]
             }
         }
     ].map(function(geometry){
