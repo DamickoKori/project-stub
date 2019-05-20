@@ -18,9 +18,7 @@ const techs = {
             require('rebem-css'),
             require('postcss-url')({ url: 'rebase' }),
             require('autoprefixer')(),
-            require('postcss-reporter')(),
-            require('postcss-variables'),
-            require('postcss-hexrgba')
+            require('postcss-reporter')()
         ],
 
         // js
