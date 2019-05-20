@@ -1,0 +1,5 @@
+:block(button):mod(theme islands){
+    &:block(button):mod(width available) {
+        width: 100%;
+    }
+}
