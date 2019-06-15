@@ -1,8 +1,0 @@
-:block(geometry){
-    &:mod(theme light){
-        background-color: #FFFFFF;
-    }
-    &:elem(frame):mod(theme light){
-        background-color: inherit;
-    }
-}
