@@ -1,6 +1,6 @@
-module.exports = {
+    module.exports = {
     block: 'page',
-    title: 'Modeling block',
+    title: 'Create',
     favicon: '/favicon.ico',
     head: [
         { elem: 'meta', attrs: { name: 'description', content: '' } },
@@ -9,30 +9,5 @@ module.exports = {
     ],
     scripts: [{ elem: 'js', url: 'index.min.js' }],
     mods: { theme: 'islands' },
-    content: [
-        {
-
-            block: 'geometry',
-            theme: 'light',
-            content: [
-                {elem: 'frame', size: 'xl'},
-                {elem: 'frame', size: 'l'},
-                {elem: 'frame', size: 'm', focused: true},
-                {elem: 'frame', size: 's'}
-            ].map(function(frame){
-                frame.elemMods = {theme: 'light', size: frame.size, position: 'flex-center', focused: frame.focused};
-                return frame;
-            })
-        },
-        {
-            block: 'geometry',
-            content: {
-                elem: 'block',
-                content: []
-            }
-        }
-    ].map(function(geometry){
-        geometry.mods = {theme: geometry.theme, position: 'flex-center'}
-        return geometry;
-    })
+    content: []
 };
