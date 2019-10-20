@@ -17,7 +17,7 @@
             content: [
                 {elem: 'frame', size: 'xl'},
                 {elem: 'frame', size: 'l'},
-                {elem: 'frame', size: ''},
+                {elem: 'frame', size: 'm'},
                 {elem: 'frame', size: 's', focused: true}
             ].map(function(frame){
                 frame.elemMods = {theme: 'light', size: frame.size, position: 'flex-center', focused: frame.focused};
